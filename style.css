@@ -1,0 +1,46 @@
+/* Center the button */
+button {
+    position: fixed;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+button:hover {
+    background-color: #218838; /* Darker green */
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+/* Style for the toast */
+#toast {
+    visibility: hidden;
+    min-width: 250px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+/* Show the toast */
+#toast.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
